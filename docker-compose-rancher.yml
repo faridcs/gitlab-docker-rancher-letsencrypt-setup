@@ -1,4 +1,4 @@
-version: "2"
+version: '3.3'
 
 services:
   rancher:
@@ -12,7 +12,7 @@ services:
       - LETSENCRYPT_HOST=rancher.test.revolunet.org
       - LETSENCRYPT_EMAIL=foo@bar.com
     volumes:
-      - "/root/docker/mysql-datadir:/var/lib/mysql"
+      - "/root/docker/mysql-data:/var/lib/mysql"
 
 networks:
   default:
